@@ -8,7 +8,7 @@ The system detects and classifies vehicles from uploaded traffic images, generat
 
 ## 🔗 Live Demo
 
-(https://intelligent-traffic-analytics-system.onrender.com)
+https://intelligent-traffic-analytics-system.onrender.com
 
 ---
 

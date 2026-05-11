@@ -6,6 +6,7 @@ from utils.detector import detect_vehicles
 app = Flask(__name__)
 
 UPLOAD_FOLDER = "static/uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 

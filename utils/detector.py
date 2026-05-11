@@ -69,6 +69,9 @@ def detect_vehicles(image_path):
         )
 
     # Output path
+    # Create output folder if not exists
+
+    os.makedirs("static/outputs", exist_ok=True)
     output_path = os.path.join(
         "static/outputs",
         os.path.basename(image_path)

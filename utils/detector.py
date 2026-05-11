@@ -4,13 +4,18 @@ import os
 
 # Load trained YOLO model
 model = YOLO("best.pt")
+model.fuse()
 
 
 def detect_vehicles(image_path):
 
     # Run prediction
-    results = model.predict(source=image_path, conf=0.5,imgsz=320)
-
+    results = model.predict(
+    source=image_path,
+    conf=0.5,
+    device="cpu",
+    verbose=False
+)
     result = results[0]
 
     # Vehicle counters
